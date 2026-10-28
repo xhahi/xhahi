@@ -1,0 +1,23 @@
+{
+  "mode": "m15_breaks",
+  "data_provider": "twelvedata",
+  "symbol": "XAU/USD",
+  "oanda_instrument": "XAU_USD",
+  "oanda_env": "practice",
+  "oanda_token": "",
+  "telegram_bot_token": "",
+  "telegram_chat_id": "",
+  "swing_length_lower": 2,
+  "window_ist": [
+    "10:30",
+    "23:59"
+  ],
+  "alerts": {
+    "m15": true,
+    "h4_bo": false,
+    "op": false,
+    "cf": false
+  },
+  "ema_length": 50,
+  "twelvedata_api_key": "PASTE_YOUR_TWELVEDATA_API_KEY_HERE"
+}

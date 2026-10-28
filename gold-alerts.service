@@ -1,0 +1,17 @@
+# For an always-free Linux VM (e.g. Oracle Cloud Always Free). Copy to /etc/systemd/system/
+[Unit]
+Description=Gold alerts bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/gold-alerts
+Environment=OANDA_TOKEN=PUT_TOKEN
+Environment=TELEGRAM_BOT_TOKEN=PUT_TOKEN
+Environment=TELEGRAM_CHAT_ID=PUT_ID
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+RestartSec=10
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
